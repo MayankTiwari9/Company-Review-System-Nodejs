@@ -19,3 +19,18 @@ exports.postAddCompany = (req, res, next) => {
         console.log(err);
     })
 }
+
+exports.getAllComapny = (req, res, next) => {
+    const name = req.body.company;
+    console.log(req.body);
+    Company.findAll({where: {name: name}})
+    .then((company) => {
+        if(company.length === 0){
+            return res.status(404).json({message: 'Company Not Found'})
+        }
+        return res.status(200).json(company)
+    })
+    .catch((err) => {
+        console.log(err);
+    })
+}
