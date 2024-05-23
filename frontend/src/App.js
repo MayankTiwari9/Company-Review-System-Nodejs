@@ -4,7 +4,7 @@ import SearchedCompany from './Components/SearchedCompany/SearchedCompany';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
      <CompanyForm/>
      <SearchedCompany/>
     </div>

@@ -44,7 +44,7 @@ const CompanyForm = () => {
   return (
     <form onSubmit={formSubmitHandler}>
       <div className="space-y-12 p-6">
-        <h1 className="text-base flex mx-auto font-semibold leading-7 text-gray-900">
+        <h1 className="flex mx-auto font-semibold leading-7 items-center justify-center">
           Company Review
         </h1>
 
@@ -65,7 +65,7 @@ const CompanyForm = () => {
                 value={formData.name}
                 onChange={handleChange}
                 required
-                className="block w-2/4 rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                className="block w-2/4 rounded-md border-0 p-2.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
               />
             </div>
           </div>
